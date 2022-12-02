@@ -2523,3 +2523,30 @@ for i in range(len(rounds)):
             case "C":
                 score += 3
 print(score)
+score = 0
+for i in range(len(rounds)):
+    if rounds[i].split(" ")[0] == "A":
+        match rounds[i].split(" ")[1]:
+            case "X":
+                score += 3
+            case "Y":
+                score += 4
+            case "Z":
+                score += 8
+    elif rounds[i].split(" ")[0] == "B":
+        match rounds[i].split(" ")[1]:
+            case "X":
+                score += 1
+            case "Y":
+                score += 5
+            case "Z":
+                score += 9
+    elif rounds[i].split(" ")[0] == "C":
+        match rounds[i].split(" ")[1]:
+            case "X":
+                score += 2
+            case "Y":
+                score += 6
+            case "Z":
+                score += 7
+print(score)
