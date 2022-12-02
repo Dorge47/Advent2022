@@ -2261,3 +2261,7 @@ for i in range(len(puzzleInput)):
     for j in range(len(puzzleInput[i])):
         inputLengths[i] += int(puzzleInput[i][j])
 print(max(inputLengths))
+topThree = 0
+for i in range(3):
+    topThree += int(inputLengths.pop(inputLengths.index(max(inputLengths))))
+print(topThree)
