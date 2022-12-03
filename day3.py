@@ -301,7 +301,6 @@ pphWQMVjQVVBWWjRlHlHnlcLDDhcnF
 JQwwWVPBwMJpJwpWwGBWNzrDzSSzfgTPqTSTTtSPgt
 """
 puzzleInput = puzzleInput.split()
-hell = ValueError
 letters = []
 for i, letter in enumerate(string.ascii_letters):
     letters.append([letter, i+1])
